@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2e2e2e;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none; 
+}
+#app {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+/* Poker Hands Layout */
+.hands-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two same columns */
+    gap: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hand-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.hand {
+    text-align: center;
+}
+
+/* Card Styling */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card {
+    width: 50px;
+    height: 60px;
+    background: #fff;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.spade, .club {
+    color: black;
+}
+
+.heart, .diamond {
+    color: red;
+}
+
+/* game */
+
+#player-hand, #community-cards {
+    margin: 20px 0;
+}
+
+/* Make Diamonds and Hearts red */
+.card:has(> .heart), 
+.card:has(> .diamond), 
+.card[data-suit="♥"], 
+.card[data-suit="♦"] {
+    color: red;
+}
