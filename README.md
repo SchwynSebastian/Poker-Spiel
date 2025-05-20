@@ -7,7 +7,7 @@ Dieses Projekt ist eine einfache Web-Anwendung, die ein Poker-Spiel simuliert. D
 ## Aufbau der Anwendung
 
 ### HTML-Struktur
-- **Begrüßungsseite** (`#greeting-page`): Zeigt den Titel, Buttons für Regeln, Pokerhände und den Spielstart.
+- **Begrüssungsseite** (`#greeting-page`): Zeigt den Titel, Buttons für Regeln, Pokerhände und den Spielstart.
 - **Regelseite** (`#rules-page`): Erklärt die grundlegenden Pokerregeln.
 - **Pokerhand-Ranking-Seite** (`#combinations-page`): Zeigt die verschiedenen Pokerhände mit Beispielkarten in zwei Spalten.
 - **Spielseite** (`#game-page`): Zeigt die Hände des Spielers und der KI, die Gemeinschaftskarten, Handbewertungen und Spielbuttons (Karten ausgeben, Fold, Zurück zur Startseite).
